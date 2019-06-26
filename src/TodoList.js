@@ -58,7 +58,7 @@ class TodoList extends React.Component {
   }
 
   handleRemoveItem(id) {
-    const filteredState = this.state.todoItems.filter(item => item.id !== id)
+    const filteredState = this.state.todoItems.filter(item => item.id !== id);
     this.setState({
       todoItems: filteredState,
     });
